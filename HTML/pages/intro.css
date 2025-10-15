@@ -1,0 +1,13 @@
+
+        #p1{
+         color: brown;
+        }
+        .p2{
+           color: blue;
+        }
+        .p2,div{
+            color: rgb(205, 130, 18);
+        }
+        div p{
+            color: chartreuse;
+        }

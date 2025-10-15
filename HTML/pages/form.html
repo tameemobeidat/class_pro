@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+     <fieldset>
+        <legend>personal form</legend><br><br>
+    <form> <!--    "كل عنصر داخل الفورم "ان لاين   -->
+        
+        
+          <div> <!-- عنصر بلوك لوضع كل عنصر على سطر خاص به-->
+            <label>Name:</label> <!-- or    <span> Name:</span>   -->
+        <input type="text" placeholder="Enter your name --" required maxlength="10" value="ahmed">
+          </div>
+
+          <div>
+            <input type="password" placeholder="Enter your pass--" disabled>
+          </div>
+          <input type="email">
+          <br>
+          <p>Gender:</p>
+          <input type="radio" name="ITEM1" value="female">
+          
+          <span>Female</span>
+          <input type="radio" name="ITEM1" value="male">
+          <span>Male</span>
+          <p>skills:</p>
+          <input type="checkbox"  value="py">
+          
+          <span>python</span>
+          <input type="checkbox"  value="js">
+          <span>java secript</span>
+
+          <br><input type="number" min="18" max="24">   
+          <br><br><input type="date">   
+          
+          
+
+
+          <br><br><br><textarea cols="22" rows="6" ></textarea>
+          <br><br><br>
+          <p>yuor country:</p>
+          <select size="4">
+           <option value="jordan">jordan</option>
+           <option value="irbid" selected>irbid</option>
+           <option value="qatar">qatar</option>
+           <option value="japan">japan</option>
+          </select>
+          
+         
+
+        
+
+          
+
+          <br><br><input type="submit">  <input type="reset">
+    </form>
+     </fieldset>
+    
+</body>
+</html>
