@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex </title>
+    <style>
+        .main{
+            /* جميع هذه الخواص للاب المباشر */
+            background-color: blue;
+            display: flex;
+            flex-direction: row; /* defullt*/
+            /*flex-direction: column;
+             flex-direction: row-reverse; عكس الاتجاه مع الحفاظ على الترتيب 
+            flex-direction: column-reverse; عكس الاتجاه مع الحفاظ على الترتيب */
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            flex-wrap: nowrap; /* defullt*/
+            flex-wrap:wrap;
+            height: 400px;
+            /* align-content: flex-start;
+            align-content: flex-end;
+            align-content: center; */
+            align-content: space-around;
+            align-content: space-between;
+           
+            /*
+             align-items: ; لايوجد بها سبيس اراوند او بتوين او ....*/
+            justify-content: center; /* #1  شرط لوضع العناصر بالنص*/
+            align-content: center;   /* #1  شرط لوضع العناصر بالنص*/
+
+        }
+        .main div{
+            background-color: azure;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>3</div>
+        <div>6</div>
+        <div>4</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0;      /* #2 */
+        }
+        nav{
+            /* width: 200px;    #1 */ 
+            width: 100vw;     /* #2 */
+            
+            background-color: rgb(103, 141, 141);
+            
+        }
+        nav a {
+            /* display: block;       #1*/
+            display: inline-block; /* #2  */
+            text-decoration: none;
+            /* padding: 10px 16px;       #1*/
+            padding: 20px 30px;       /* #2 */
+            color: #000;
+        }
+        nav .a1{
+            background-color:burlywood;
+        
+        }
+        nav a:hover:not(.a1){
+            background-color: aqua;
+            color: rgb(252, 111, 2);
+        }
+        input[type=text]{ /* بطبق الستايل بس على التكست*/
+            width: 200px;
+            background-color: cadetblue;
+            padding: 10px;
+            border: none;
+            /* outline: none;  البوردر الي من جوا لما تكبس كليك على البوتن */
+            margin: 15px;
+            border-radius: 7px;
+
+            
+        }
+        input[type=text]:focus{ /* الفوكس يعني بس تكبس على البوتن (مش تاشر)*/
+            outline: 3px solid rgb(51, 225, 63);
+            background-color: aliceblue;
+
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="a1"> home</a>
+        <a href="#"> about</a>
+        <a href="#"> contact</a>
+         <a href="#" style="position: absolute ; right: 10px;"> phone</a> <!-- #2 -->
+    </nav> <br><br><br><br><br><br>
+     <input type="text">
+      <input type="text">
+    <input type="submit">
+
+    <div style="width: 300px; height: 300px; background-color: red; background-image: linear-gradient(to top ,red,blue,green); ">
+</div>
+    <div style="width: 300px;
+               height: 300px;
+               margin: 30px;
+               box-shadow: 5px 5px 20px lightgray; 
+               border-radius: 50%;">
+
+    </div>
+</body>
+</html>

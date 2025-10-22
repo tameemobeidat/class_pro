@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        :root{  /*  مخزن متغيرات او مرجع للصفحه كاملة*/
+
+            --titleColor:#00ffff;
+            --normalText:#000;
+        }
+        h1{
+            color: var(--titleColor);
+        }
+        q{
+            color: var(--normalText);
+        }
+
+        @media screen and (max-width:1000px){ /* responsive */
+
+          body{
+            background-color: bisque;
+          }
+        }
+        @media screen and (max-width:500px){
+
+          body{
+            background-color: rgb(10, 233, 77);
+          }
+        }
+
+    </style>
+  
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium
+        corporis praesentium aspernatur suscipit. Eligendi esse itaque soluta. Explicabo, omnis?</p>
+</body>
+</html>

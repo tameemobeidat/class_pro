@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* left: 200px; ما تحركش لانه نوعه ستاتك , الديفولت يعني , الحل انه نغيره لنوع ثاني غير الستاتك */
+            display: inline-block; /* عشان ييجو جنب بعض (الدفات)*/
+            
+        }
+        #div1{
+            /* left: 65px; */
+            
+            background-color: aqua;
+            position: relative; /* ببلش عد من مكانه لمحل ما بدك توجهه ومكانه بضل محجوز بحلش محله حدا*/
+            z-index: 1;
+        }
+        #div2{
+            right:60px ;
+             position: relative;
+            
+            background-color: black;
+        }
+        #div3{
+            /* left: 60px; ببلش عد من الاب تبعه الي هو البدي مش الدف ( يعني ببلش من بداية الصفحه */
+            right: 0;
+            background-color: coral;
+            position: absolute; /* بتحرك بناء على الاب تبعه مش زي الريليتف من مكانه */
+
+        }
+        #div4{
+            background-color: cornflowerblue;
+
+        }
+        #div5{
+            position: relative; /* عملناها عشان يعتبر الدف الاب لما يتحرك مش البودي (شرط اساسي).
+                                        لما احرك دف سته يتحرك جوا دف خمسه مش جوا البودي*/
+            background-color: darkgreen;
+            width: 300px;
+            height: 300px;
+
+        }
+       
+    </style>
+   
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div> <br><br><br><br><br><br><br>
+    <div id="div3"></div>
+    <div id="div4"></div><br><br><br><br><br><br><br>
+    <div id="div5">
+        <div id="div6"></div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
+        
+    </body>
+</html>

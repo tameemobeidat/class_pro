@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+           /* transition: background-color 3s,width,height 5s; 
+            transition-delay:2s;         #1*/
+            animation-name: animation;
+            animation-duration: 9s;
+            
+            animation-iteration-count: infinite;
+            position: relative;
+            border-radius: 50%;
+        }
+        /* div:hover{           #1
+            width: 400px;
+            height: 400px;
+            background-color: rgb(168, 170, 173);
+            border-radius: 50%;
+            
+        } */
+         /* @keyframes animation {   
+            from{background-color: blue; left: 0PX;}
+            to{background-color: rgb(245, 9, 9); left:200px;
+            }
+             
+              @keyframes animation {
+            0%{left: 0; top: 0;}
+            25%{left: 200px; top: 0;}
+            50%{left: 200px; top: 200px;}
+            75%{left: 0; top: 200px;}
+            100%{left: 0; top: 0;}
+         }
+            */
+            @keyframes animation {   
+            0%{ left: 0;}
+            50%{ left:calc(100vw - 100px);} /* عشان ما يخبطش باخر الصفحه عاليمين (يفوت جواويختفي نصه)*/
+            100%{left: 0;}
+            }
+            
+
+
+    </style>
+    
+</head>
+<body>
+    <div></div>
+</body>
+</html>
